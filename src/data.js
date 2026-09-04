@@ -5,7 +5,7 @@ export const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent(
 )}`;
 
 // TODO: replace with your real CV link (Google Drive / Dropbox / hosted PDF)
-export const CV_URL = "#";
+export const CV_URL = "/cv.pdf";
 
 export const skillGroups = [
   {
