@@ -27,22 +27,26 @@ export default function Contact() {
             whileHover={{ scale: 1.03 }}
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(24px,4vw,44px)",
+              fontSize: "clamp(18px,5.5vw,44px)",
               fontWeight: 800,
               display: "inline-flex",
               alignItems: "center",
-              gap: 14,
+              justifyContent: "center",
+              flexWrap: "wrap",
+              gap: 10,
               margin: "18px 0 40px",
-              padding: "18px 30px",
+              padding: "16px 20px",
               borderRadius: 20,
               background: "var(--surface)",
               border: "1px solid var(--border-strong)",
+              maxWidth: "100%",
+              boxSizing: "border-box",
             }}
           >
-            <span style={{ display: "flex", color: "var(--accent-bright)" }}>
+            <span style={{ display: "flex", color: "var(--accent-bright)", flexShrink: 0 }}>
               <Mail size={32} strokeWidth={2} />
             </span>
-            <span>
+            <span style={{ overflowWrap: "anywhere", wordBreak: "break-word" }}>
               hiramustaqeem09
               <span style={{ color: "var(--accent-bright)" }}>@gmail.com</span>
             </span>

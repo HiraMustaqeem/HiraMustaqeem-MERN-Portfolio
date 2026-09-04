@@ -59,7 +59,6 @@ export default function Footer() {
               <Link2 size={13} strokeWidth={2.3} /> LinkedIn
             </a>
             <div style={{ marginBottom: 11 }}>
-              {/* <PhonePill number={PHONE} display="0335-2665465" className="footer-phone-pill" /> */}
             </div>
             <a
               href="#contact"
@@ -79,14 +78,18 @@ export default function Footer() {
                 alignItems: "center",
                 gap: 8,
                 fontFamily: "var(--font-mono)",
-                fontSize: 13,
+                fontSize: 12,
                 color: "var(--accent-bright)",
                 border: "1px solid var(--border-strong)",
                 padding: "10px 16px",
                 borderRadius: 9,
+                maxWidth: "100%",
+                boxSizing: "border-box",
+                overflowWrap: "anywhere",
+                wordBreak: "break-word",
               }}
             >
-              <Mail size={14} strokeWidth={2.3} /> {EMAIL}
+              <Mail size={14} strokeWidth={2.3} style={{ flexShrink: 0 }} /> {EMAIL}
             </motion.a>
           </div>
         </div>
@@ -103,9 +106,7 @@ export default function Footer() {
           <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-dim)" }}>
             © {year} Hira Mustaqeem. All rights reserved.
           </span>
-          <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-dim)" }}>
-            Built with React <span style={{ color: "var(--accent)" }}>&</span> Framer Motion
-          </span>
+          
         </div>
       </div>
     </footer>

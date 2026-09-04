@@ -47,7 +47,7 @@ export default function Nav() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "18px 32px",
+          padding: "18px 0",
         }}
       >
         <a
@@ -60,6 +60,7 @@ export default function Nav() {
             alignItems: "center",
             gap: 8,
             zIndex: 2,
+            flexShrink: 0,
           }}
         >
           <motion.span
@@ -129,6 +130,7 @@ export default function Nav() {
             justifyContent: "center",
             color: "var(--text)",
             zIndex: 2,
+            flexShrink: 0,
           }}
         >
           {open ? <X size={20} /> : <Menu size={20} />}

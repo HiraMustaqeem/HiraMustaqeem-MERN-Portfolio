@@ -313,6 +313,24 @@ h2.section-title {
   }
 }
 
+/* ---------------- small phones ---------------- */
+@media (max-width: 560px) {
+  .wrap {
+    padding: 0 16px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+}
+
+/* ---------------- prevent horizontal overflow everywhere ---------------- */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* ---------------- project screenshot ---------------- */
 .project-image-frame {
   position: relative;
